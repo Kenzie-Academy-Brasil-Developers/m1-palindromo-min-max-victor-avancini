@@ -9,8 +9,20 @@ function isPalindrome(str){
     }
     return false
 }
-console.log(isPalindrome('A mala nada na lama'))
+// console.log(isPalindrome('A mala nada na lama'))
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
+    let max = arr[0];
+    let min = arr[0];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i]
+        }else if(arr[i] < min){
+            min = arr[i]
+        }
+    }
+    let newarray = [min,max]
+    return newarray
 }
+// let teste = [65,2,3,4,6,6,3,2,1214,43]
+// console.log(arrayMaxMin(teste))
